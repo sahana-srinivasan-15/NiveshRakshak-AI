@@ -5,6 +5,7 @@ SITUATIONS_DB = {
     "money_transferred": {
         "title": "Money Transferred to Suspicious Entity / Scammer",
         "title_ta": "சந்தேகத்திற்கிடமான நபருக்கு பணம் அனுப்பப்பட்டுவிட்டது",
+        "title_hi": "संदिग्ध व्यक्ति या धोखेबाज को पैसे ट्रांसफर कर दिए गए हैं",
         "immediate_steps": [
             "ACT WITHIN THE GOLDEN HOUR (FIRST 2 HOURS): Call 1930 (National Cyber Crime Helpline) immediately to flag the transaction and request freezing of the beneficiary account.",
             "Call your bank's 24x7 fraud helpline to report the transaction ID (UTR/RRN) and request an immediate recall / freeze.",
@@ -16,6 +17,12 @@ SITUATIONS_DB = {
             "உங்கள் வங்கியின் 24x7 அவசர எண்ணை அழைத்து, அந்த பரிவர்த்தனை எண்ணை (UTR) தெரிவித்து கணக்கை முடக்கக் கோருங்கள்.",
             "cybercrime.gov.in என்ற அதிகாரப்பூர்வ அரசு இணையதளத்தில் 'நிதி மோசடி' பிரிவில் உடனே புகார் பதிவு செய்யவும்.",
             "பணத்தைத் திரும்பத் தர 'வரி' அல்லது 'செயலாக்கக் கட்டணம்' கேட்கப்பட்டால் எக்காரணம் கொண்டும் கூடுதல் பணம் செலுத்தாதீர்கள்."
+        ],
+        "immediate_steps_hi": [
+            "गोल्डन आवर (पहले 2 घंटे) में कार्रवाई करें: तुरंत 1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें और लाभार्थी खाते को फ्रीज करने का अनुरोध करें।",
+            "लेनदेन आईडी (UTR/RRN) दर्ज कराने और तत्काल रोक लगाने के लिए अपने बैंक की 24x7 हेल्पलाइन पर कॉल करें।",
+            "आधिकारिक राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल (cybercrime.gov.in) पर 'वित्तीय धोखाधड़ी' के तहत शिकायत दर्ज करें।",
+            "पैसे वापस पाने के लिए किसी भी अतिरिक्त 'रिलीज़ शुल्क', 'आयकर शुल्क' या 'प्रसंस्करण शुल्क' का भुगतान बिल्कुल न करें।"
         ],
         "evidence": [
             "Bank statement showing debit date, time, amount, and 12-digit UTR/RRN number.",
@@ -75,6 +82,7 @@ SITUATIONS_DB = {
     "unable_to_withdraw": {
         "title": "Trading App / Platform Refusing Withdrawal / Demanding Extra Fees",
         "title_ta": "முதலீட்டு ஆப் பணத்தை திரும்பத் தர மறுக்கிறது / கூடுதல் கட்டணம் கேட்கிறது",
+        "title_hi": "ट्रेडिंग ऐप निकासी से इनकार कर रहा है / अतिरिक्त शुल्क मांग रहा है",
         "immediate_steps": [
             "DO NOT send any additional money for 'tax', 'clearance', 'margin deposit', or 'VIP verification'. This is a common advance-fee tactic.",
             "Take complete video screen-recording and screenshots of your account balance, withdrawal refusal messages, and customer support chats.",
@@ -86,6 +94,12 @@ SITUATIONS_DB = {
             "ஆப்பில் உள்ள தொகை, பணம் எடுக்க மறுக்கும் செய்தி, மற்றும் உரையாடல்களை முழுமையாக ஸ்கிரீன்ஷாட் மற்றும் வீடியோ பதிவு செய்து கொள்ளவும்.",
             "அந்த நிறுவனம் SEBI-யில் பதிவு செய்யப்பட்டுள்ளதா என்பதை அதிகாரப்பூர்வ sebi.gov.in தளத்தில் சரிபார்க்கவும்.",
             "1930 உதவி எண்ணை அழைத்து உடனடியாக சைபர் கிரைம் புகார் பதிவு செய்யவும்."
+        ],
+        "immediate_steps_hi": [
+            "'टैक्स' या 'मार्जिन डिपॉजिट' के नाम पर कोई अतिरिक्त पैसा न भेजें। यह एक आम अग्रिम-शुल्क धोखाधड़ी रणनीति है।",
+            "अपने खाते के शेष, निकासी अस्वीकृति संदेश और ग्राहक सहायता चैट की स्क्रीन-रिकॉर्डिंग और स्क्रीनशॉट लें।",
+            "जाँचें कि क्या ब्रोकर वास्तव में SEBI पोर्टल (sebi.gov.in) पर पंजीकृत है। नकली ऐप्स अक्सर स्क्रीन पर काल्पनिक लाभ दिखाते हैं।",
+            "तुरंत राष्ट्रीय साइबर अपराध हेल्पलाइन (1930) और cybercrime.gov.in पर शिकायत दर्ज करें।"
         ],
         "evidence": [
             "Screen recording of login, balance display, and withdrawal rejection.",
@@ -134,6 +148,7 @@ SITUATIONS_DB = {
     "broker_dispute": {
         "title": "Broker Dispute / Unauthorized Trades Executed",
         "title_ta": "பங்குத் தரகர் தகராறு / அனுமதியின்றி செய்யப்பட்ட வர்த்தகம்",
+        "title_hi": "ब्रोकर विवाद / अनधिकृत ट्रेड किए गए",
         "immediate_steps": [
             "Raise an immediate formal grievance ticket with your broker's designated Compliance Officer in writing.",
             "Check NSDL / CDSL Consolidated Account Statement (CAS) and exchange SMS trade alerts to determine exact unauthorized orders.",
@@ -145,6 +160,12 @@ SITUATIONS_DB = {
             "NSDL அல்லது CDSL கணக்கு அறிக்கை மற்றும் பங்குச்சந்தை SMS-களை ஒப்பிட்டு சரிபார்க்கவும்.",
             "15 நாட்களுக்குள் தரகர் தீர்வு காணாவிட்டால், SEBI SCORES 2.0 தளத்தில் புகார் பதிவு செய்யவும்.",
             "தேவைப்பட்டால் SMART ODR இணையதளம் மூலம் நடுவர் தீர்ப்பாயத்தை அணுகவும்."
+        ],
+        "immediate_steps_hi": [
+            "अपने ब्रोकर के अनुपालन अधिकारी (Compliance Officer) को लिखित रूप में तुरंत औपचारिक शिकायत दर्ज करें।",
+            "अनधिकृत ट्रेडों की पहचान के लिए NSDL / CDSL खाता विवरण और एक्सचेंज SMS की जाँच करें।",
+            "यदि ब्रोकर 15 दिनों के भीतर समाधान नहीं करता है, तो SEBI SCORES 2.0 पोर्टल पर शिकायत दर्ज करें।",
+            "यदि SCORES के माध्यम से समाधान नहीं होता है, तो स्वतंत्र मध्यस्थता के लिए SMART ODR पोर्टल का उपयोग करें।"
         ],
         "evidence": [
             "Contract notes for the disputed trade dates.",
@@ -201,6 +222,7 @@ SITUATIONS_DB = {
     "fake_advisor": {
         "title": "Unregistered Advisor / Telegram Group Promising Sure Tips",
         "title_ta": "பதிவு செய்யப்படாத பங்கு ஆலோசகர் / வாட்ஸ்அப் குழு",
+        "title_hi": "अपंजीकृत सलाहकार / पक्की टिप्स देने वाला टेलीग्राम ग्रुप",
         "immediate_steps": [
             "Verify registration status on SEBI portal (sebi.gov.in -> Intermediaries -> Investment Advisers / Research Analysts).",
             "Refuse profit-sharing arrangements, fee deposits, or handing over demat login credentials.",
@@ -212,6 +234,12 @@ SITUATIONS_DB = {
             "லாபப் பகிர்வு ஒப்பந்தங்கள் அல்லது டிமேட் லாகின் விவரங்களை எவருக்கும் தர வேண்டாம்.",
             "வாட்ஸ்அப் அல்லது டெலிகிராம் குழு உரையாடல்களைப் பதிவிறக்கி, அக்குழுவை பிளாக் செய்து புகார் அளிக்கவும்.",
             "SEBI SCORES தளத்தில் சட்டவிரோத ஆலோசனை குறித்து புகார் அளிக்கவும்."
+        ],
+        "immediate_steps_hi": [
+            "SEBI पोर्टल (sebi.gov.in -> Intermediaries -> Investment Advisers) पर पंजीकरण स्थिति की पुष्टि करें।",
+            "मुनाफ़ा साझा करने के प्रस्ताव या डीमैट लॉगिन क्रेडेंशियल किसी को न दें।",
+            "चैट इतिहास डाउनलोड करें और ग्रुप को व्हाट्सएप/टेलीग्राम पर रिपोर्ट करें।",
+            "SEBI SCORES पोर्टल पर गैर-पंजीकृत सलाहकार के रूप में शिकायत दर्ज करें।"
         ],
         "evidence": [
             "Screenshots of guaranteed return promises and subscription fee rate-cards.",
@@ -267,8 +295,10 @@ def get_grievance_guide(situation_id: str) -> GrievanceResponse:
         situation_id=situation_id,
         situation_title=sit["title"],
         situation_title_ta=sit["title_ta"],
+        situation_title_hi=sit.get("title_hi"),
         immediate_steps=sit["immediate_steps"],
         immediate_steps_ta=sit["immediate_steps_ta"],
+        immediate_steps_hi=sit.get("immediate_steps_hi"),
         evidence_to_preserve=sit["evidence"],
         who_to_contact=sit["contacts"],
         info_to_keep_ready=sit["info_needed"],

@@ -60,6 +60,11 @@ def check_investment_claim(claim_text: str) -> ClaimCheckResponse:
             "மிக அதிக ஆபத்துள்ள வாக்குறுதி. பங்குச்சந்தை அல்லது வர்த்தகத்தில் நிலையான லாபத்தை உறுதியளிப்பது SEBI விதிகளுக்கு எதிரானது. "
             "இந்த வாக்குறுதியை நம்பி எவருக்கும் பணம் அனுப்பாதீர்கள்."
         )
+        interpretation_hi = (
+            "अत्यधिक जोखिम भरा दावा जिसके लिए तत्काल स्वतंत्र सत्यापन आवश्यक है। "
+            "शेयर बाजार या स्वचालित ट्रेडिंग में निश्चित गारंटीड रिटर्न का वादा करना सेबी (SEBI) नियमों का उल्लंघन है। "
+            "इस दावे के आधार पर किसी को पैसे न भेजें।"
+        )
     elif risk_score >= 40:
         risk_level = "HIGH"
         interpretation_en = (
@@ -69,6 +74,10 @@ def check_investment_claim(claim_text: str) -> ClaimCheckResponse:
         interpretation_ta = (
             "கவனிக்கத்தக்க ஆபத்துக் காரணி. அசல் பண இழப்பு அபாயத்தை மறைத்து லாபத்தை மட்டும் முன்னிலைப்படுத்துவது எச்சரிக்கைக்குரியது."
         )
+        interpretation_hi = (
+            "चिंताजनक दावा मिला। मूल पूंजी के नुकसान के जोखिम को बताए बिना उच्च रिटर्न का वादा "
+            "पंजीकृत मध्यस्थों के साथ कड़े स्वतंत्र सत्यापन की मांग करता है।"
+        )
     elif risk_score >= 20:
         risk_level = "MODERATE"
         interpretation_en = (
@@ -77,6 +86,9 @@ def check_investment_claim(claim_text: str) -> ClaimCheckResponse:
         interpretation_ta = (
             "மிதமான எச்சரிக்கை தேவை. ஆலோசனை வழங்கும் நபர் SEBI-யில் பதிவு செய்துள்ளாரா எனச் சரிபார்க்கவும்."
         )
+        interpretation_hi = (
+            "मध्यम सावधानी आवश्यक है। जाँचें कि क्या पेशकश करने वाली संस्था SEBI पंजीकृत रिसर्च एनालिस्ट या पोर्टफोलियो मैनेजर है।"
+        )
     else:
         risk_level = "LOW"
         interpretation_en = (
@@ -84,6 +96,9 @@ def check_investment_claim(claim_text: str) -> ClaimCheckResponse:
         )
         interpretation_ta = (
             "ஆபத்தான வாக்குறுதிகள் கண்டறியப்படவில்லை. சாதாரண சந்தை இடர் விதிகளுக்கு உட்பட்டது."
+        )
+        interpretation_hi = (
+            "कोई आक्रामक गारंटी या भ्रामक दावा नहीं मिला। मानक बाजार जोखिम नियम लागू होते हैं।"
         )
 
     verification_steps = [
@@ -102,5 +117,6 @@ def check_investment_claim(claim_text: str) -> ClaimCheckResponse:
         risk_level=risk_level,
         safety_interpretation=interpretation_en,
         safety_interpretation_ta=interpretation_ta,
+        safety_interpretation_hi=interpretation_hi,
         suggested_verification_steps=verification_steps
     )
