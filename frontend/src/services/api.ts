@@ -167,7 +167,7 @@ export async function explainText(text: string, language: Language = 'en'): Prom
   }
 }
 
-export async function checkClaim(claimText: string): Promise<ClaimCheckResponse> {
+export async function checkClaim(claimText: string, language: Language = 'en'): Promise<ClaimCheckResponse> {
   try {
     const res = await fetch(`${API_BASE_URL}/check-claim`, {
       method: 'POST',
@@ -177,7 +177,7 @@ export async function checkClaim(claimText: string): Promise<ClaimCheckResponse>
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } catch (err) {
-    return fallbackCheckClaim(claimText);
+    return fallbackCheckClaim(claimText, language);
   }
 }
 
@@ -473,7 +473,7 @@ function fallbackExplainText(text: string, language: Language = 'en'): ExplainRe
   };
 }
 
-function fallbackCheckClaim(text: string): ClaimCheckResponse {
+function fallbackCheckClaim(text: string, language: Language = 'en'): ClaimCheckResponse {
   const lower = text.toLowerCase();
   const hasGuarantee = /guaranteed|assured|100%|sure|गारंटी|गारंटीड/i.test(lower);
   const hasReturn = /\d{1,3}%|double|2x|दोगुना|இரட்டிப்பாகும்/i.test(lower);
